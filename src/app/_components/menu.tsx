@@ -14,11 +14,8 @@ import {
 
 const menuItems = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
-  { label: 'Writing Assistant', href: '/writing-assistant' },
+  { label: 'About me', href: '/about' },
+  { label: 'Portfolio', href: '/portfolio' },
 ];
 
 export function HamburgerMenu() {
@@ -27,13 +24,13 @@ export function HamburgerMenu() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" size="icon" className="hover:bg-accent/10">
           <Menu className="h-5 w-5" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="bg-white dark:bg-[#361C48]">
+      <SheetContent className="border-l border-border bg-[rgb(242,233,225)] dark:bg-[rgb(46,27,39)]">
         <SheetHeader>
-          <SheetTitle>Menu</SheetTitle>
+          <SheetTitle className="text-foreground">Menu</SheetTitle>
         </SheetHeader>
         <nav className="mt-6 flex flex-col gap-2">
           {menuItems.map((item) => (
@@ -41,7 +38,7 @@ export function HamburgerMenu() {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="rounded-md px-3 py-2 text-sm font-medium hover:bg-accent"
+              className="rounded-md px-4 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent/20 hover:text-accent-foreground"
             >
               {item.label}
             </Link>

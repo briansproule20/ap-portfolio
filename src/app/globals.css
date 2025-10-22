@@ -8,8 +8,9 @@
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+	--font-sans: var(--font-serif);
+	--font-serif: var(--font-serif);
+	--font-heading: var(--font-heading);
 	--color-sidebar-ring: var(--sidebar-ring);
 	--color-sidebar-border: var(--sidebar-border);
 	--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -50,25 +51,25 @@
 :root {
 	--radius: 0.625rem;
 
-	/* Light Mode - Your Custom Palette */
+	/* Light Mode - Moonlit Marble background with Midnight Wine text */
 	--background: 242 233 225; /* Moonlit Marble #F2E9E1 */
 	--foreground: 46 27 39; /* Midnight Wine #2E1B27 */
 	--card: 255 255 255;
-	--card-foreground: 46 27 39;
+	--card-foreground: 46 27 39; /* Midnight Wine */
 	--popover: 255 255 255;
-	--popover-foreground: 46 27 39;
-	--primary: 201 178 155; /* Parchment Veil #C9B29B */
-	--primary-foreground: 46 27 39;
-	--secondary: 122 87 99; /* Dusky Rose #7A5763 */
-	--secondary-foreground: 255 255 255;
-	--muted: 242 233 225 / 0.6;
-	--muted-foreground: 122 87 99;
+	--popover-foreground: 46 27 39; /* Midnight Wine */
+	--primary: 122 87 99; /* Dusky Rose #7A5763 */
+	--primary-foreground: 242 233 225; /* Moonlit Marble */
+	--secondary: 201 178 155; /* Parchment Veil #C9B29B */
+	--secondary-foreground: 46 27 39; /* Midnight Wine */
+	--muted: 201 178 155 / 0.2;
+	--muted-foreground: 122 87 99; /* Dusky Rose */
 	--accent: 54 28 72; /* Plum Shadow #361C48 */
-	--accent-foreground: 242 233 225;
+	--accent-foreground: 242 233 225; /* Moonlit Marble */
 	--destructive: 239 68 68;
 	--destructive-foreground: 255 255 255;
-	--border: 201 178 155 / 0.3;
-	--input: 201 178 155 / 0.5;
+	--border: 122 87 99 / 0.2;
+	--input: 122 87 99 / 0.3;
 	--ring: 122 87 99;
 	--neutral: 122 87 99;
 	--highlight: 242 233 225;
@@ -79,34 +80,34 @@
 	--chart-5: 242 233 225;
 	--sidebar: 242 233 225;
 	--sidebar-foreground: 46 27 39;
-	--sidebar-primary: 201 178 155;
-	--sidebar-primary-foreground: 46 27 39;
+	--sidebar-primary: 122 87 99;
+	--sidebar-primary-foreground: 242 233 225;
 	--sidebar-accent: 122 87 99 / 0.1;
 	--sidebar-accent-foreground: 46 27 39;
-	--sidebar-border: 201 178 155 / 0.3;
+	--sidebar-border: 122 87 99 / 0.2;
 	--sidebar-ring: 122 87 99;
 }
 
 .dark {
-	/* Dark Mode - Inverted Custom Palette */
+	/* Dark Mode - Midnight Wine background with Moonlit Marble text */
 	--background: 46 27 39; /* Midnight Wine #2E1B27 */
 	--foreground: 242 233 225; /* Moonlit Marble #F2E9E1 */
 	--card: 54 28 72; /* Plum Shadow #361C48 */
-	--card-foreground: 242 233 225;
-	--popover: 54 28 72;
-	--popover-foreground: 242 233 225;
+	--card-foreground: 242 233 225; /* Moonlit Marble */
+	--popover: 54 28 72; /* Plum Shadow */
+	--popover-foreground: 242 233 225; /* Moonlit Marble */
 	--primary: 201 178 155; /* Parchment Veil #C9B29B */
-	--primary-foreground: 46 27 39;
+	--primary-foreground: 46 27 39; /* Midnight Wine */
 	--secondary: 122 87 99; /* Dusky Rose #7A5763 */
-	--secondary-foreground: 242 233 225;
-	--muted: 54 28 72 / 0.6;
-	--muted-foreground: 201 178 155;
-	--accent: 122 87 99; /* Dusky Rose for dark mode accent */
-	--accent-foreground: 242 233 225;
+	--secondary-foreground: 242 233 225; /* Moonlit Marble */
+	--muted: 122 87 99 / 0.2;
+	--muted-foreground: 201 178 155; /* Parchment Veil */
+	--accent: 201 178 155; /* Parchment Veil for dark mode accent */
+	--accent-foreground: 46 27 39; /* Midnight Wine */
 	--destructive: 239 68 68;
 	--destructive-foreground: 242 233 225;
-	--border: 122 87 99 / 0.3;
-	--input: 122 87 99 / 0.5;
+	--border: 201 178 155 / 0.15;
+	--input: 201 178 155 / 0.3;
 	--ring: 201 178 155;
 	--neutral: 201 178 155;
 	--highlight: 242 233 225;
@@ -115,13 +116,13 @@
 	--chart-3: 54 28 72;
 	--chart-4: 46 27 39;
 	--chart-5: 242 233 225;
-	--sidebar: 46 27 39;
+	--sidebar: 54 28 72;
 	--sidebar-foreground: 242 233 225;
 	--sidebar-primary: 201 178 155;
 	--sidebar-primary-foreground: 46 27 39;
-	--sidebar-accent: 122 87 99 / 0.2;
+	--sidebar-accent: 201 178 155 / 0.2;
 	--sidebar-accent-foreground: 242 233 225;
-	--sidebar-border: 122 87 99 / 0.3;
+	--sidebar-border: 201 178 155 / 0.15;
 	--sidebar-ring: 201 178 155;
 }
 
@@ -131,9 +132,18 @@
 	}
 	body {
 		@apply bg-background text-foreground;
-		font-feature-settings: "rlig" 1, "calt" 1;
+		font-family: var(--font-serif), serif;
+		font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+		letter-spacing: 0.01em;
+		line-height: 1.6;
 	}
 	h1, h2, h3, h4, h5, h6 {
 		@apply text-foreground font-bold;
+		font-family: var(--font-heading), serif;
+		letter-spacing: -0.02em;
+		line-height: 1.2;
+	}
+	p {
+		line-height: 1.7;
 	}
 }

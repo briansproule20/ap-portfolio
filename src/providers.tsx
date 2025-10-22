@@ -1,6 +1,5 @@
 'use client';
 
-import { EchoProvider } from '@merit-systems/echo-next-sdk/client';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export function Providers({ children }: { children: React.ReactNode }) {
@@ -11,9 +10,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       enableSystem={false}
       disableTransitionOnChange={false}
     >
-      <EchoProvider config={{ basePath: '/api/echo' }}>
-        {children}
-      </EchoProvider>
+      {children}
     </ThemeProvider>
   );
 }
