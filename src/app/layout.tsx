@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/AP favicon light.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
         url: "/AP favicon dark.png",
         media: "(prefers-color-scheme: dark)",
+      },
+      {
+        url: "/AP favicon light.png",
+        media: "(prefers-color-scheme: light)",
       },
     ],
   },
