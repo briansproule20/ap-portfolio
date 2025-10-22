@@ -5,7 +5,12 @@
       "Bash(cat:*)",
       "Bash(npm run build:*)",
       "Bash(npm install:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(git stash:*)",
+      "WebFetch(domain:echo.merit.systems)",
+      "WebFetch(domain:docs.echo.merit.systems)",
+      "WebSearch",
+      "WebFetch(domain:github.com)"
     ],
     "deny": [],
     "ask": []
