@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Alex's Portfolio",
     description: "Alexander Payiavlas - Writer and Poet",
-    images: ["/AP favicon light.png"],
+    images: ["/AP favicon dark.png"],
     type: "website",
   },
 };
