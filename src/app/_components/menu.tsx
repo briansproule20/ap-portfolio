@@ -13,9 +13,9 @@ import {
 } from '@/components/ui/sheet';
 
 const menuItems = [
-  { label: 'Home', href: '/' },
-  { label: 'About me', href: '/about' },
-  { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Home', href: '/', locked: false },
+  { label: '🔒 About me', href: '/about', locked: true },
+  { label: '🔒 Portfolio', href: '/portfolio', locked: true },
 ];
 
 export function HamburgerMenu() {
@@ -38,7 +38,11 @@ export function HamburgerMenu() {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="rounded-md px-4 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent/20 hover:text-accent-foreground"
+              className={`rounded-md px-4 py-3 text-sm font-medium transition-colors ${
+                item.locked 
+                  ? 'text-foreground/50 hover:bg-accent/10' 
+                  : 'text-foreground hover:bg-accent/20 hover:text-accent-foreground'
+              }`}
             >
               {item.label}
             </Link>
